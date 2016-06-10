@@ -10,6 +10,7 @@ nod 'vm01.linuxmaster.com' {
 }
 
 nod /^vm[0-9]+\.linuxmaster\.com$/ {
+  include sshd
 }
 
 file {'/tmp/HelloPuppetMaster':
